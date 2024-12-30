@@ -1,0 +1,236 @@
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn &amp; Earn</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://i.pinimg.com/736x/94/e3/f8/94e3f84dca64184bcdff1e705ed3b637.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            overflow: auto;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.85);
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+        }
+        h1, h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Cursive', sans-serif;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        .question {
+            margin: 20px 0;
+        }
+        .options {
+            list-style: none;
+            padding: 0;
+        }
+        .options li {
+            margin: 10px 0;
+        }
+        .options input {
+            margin-right: 10px;
+            transform: scale(1.2); /* Enlarges radio buttons */
+        }
+        .submit-button {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            background-color: #007bff; /* Blue color */
+            color: white;
+            font-size: 18px;
+            text-align: center;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            margin-top: 20px;
+        }
+        .thank-you-message {
+            display: none;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Learn &amp; Earn</h1>
+    </header>
+ <div class="container" id="quiz-container">
+        <div class="welcome-section">
+            <h1>স্বাগতম</h1>
+            <p> ফ্রিল্যান্সিং করে আয় করার স্বপ্ন পূরণ হোক! </p>
+			<p>কুইজে অংশগ্রহণ করুন এবং সেরা সেরা ফ্রি স্কিল ডেভেলপমেন্ট কোর্স করুন।</p>
+        </div>
+
+        <h1>কুইজ</h1>
+        <form id="quiz-form">
+            <!-- Question 1 -->
+            <div class="question">
+                <h3>১. ফ্রিল্যান্সিং জগতে আপনার বর্তমান স্তর কি?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="question1" value="প্রাথমিক" required=""> প্রাথমিক</li>
+                    <li><input type="radio" name="question1" value="মাধ্যমিক">মাধ্যমিক</li>
+                    <li><input type="radio" name="question1" value="উচ্চ"> উচ্চ</li>
+                </ul>
+            </div>
+
+            <!-- Question 2 -->
+            <div class="question">
+                <h3>২. কোন স্কিলটি আপনাকে সবচেয়ে বেশি আপনাকে আকর্ষণ করে?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="question2" value="Content Writing, SEO with AI" required=""> Content Writing, SEO with AI</li>
+                    <li><input type="radio" name="question2" value=" Virtual Assistance">  Virtual Assistance</li>
+                    <li><input type="radio" name="question2" value="গ্রাফিক ডিজাইন"> গ্রাফিক ডিজাইন</li>
+                    <li><input type="radio" name="question2" value="Digital Marketing"> Digital Marketing</li>
+					<li><input type="radio" name="question2" value="Social Media Management"> Social Media Management</li>
+					 <li><input type="radio" name="question2" value="Web Design"> Web Design</li>
+					 <li><input type="radio" name="question2" value="UI/UX Design"> UI/UX Design</li>
+					 <li><input type="radio" name="question2" value="AI Script to Video Making, Passive income with AI"> AI Script to Video Making, Passive income with AI</li>
+					 
+					 
+					   
+                </ul>
+            </div>
+
+            <!-- Question 3 -->
+            <div class="question">
+                <h3>৩. আপনার প্রিয় শিখার মাধ্যম কি?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="question3" value="ভিডিও" required=""> ভিডিও</li>
+                    <li><input type="radio" name="question3" value="লেখা"> লেখা</li>
+                    <li><input type="radio" name="question3" value="অডিও"> অডিও</li>
+                </ul>
+            </div>
+
+            <!-- Question 4 -->
+            <div class="question">
+                <h3>৪. আপনি কিভাবে সবচেয়ে বেশি শেখেন?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="question4" value="মনে রাখা"> মনে রাখা</li>
+                    <li><input type="radio" name="question4" value="অনুশীলন"> অনুশীলন</li>
+                </ul>
+            </div>
+
+            <!-- Question 5 -->
+            <div class="question">
+                <h3>৫. ইমেইল কি?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="question5" value="ইলাস্ট্রিক মেইল"> ইলাস্ট্রিক মেইল</li>
+                    <li><input type="radio" name="question5" value="ইলেক্ট্রনিক মেইল"> ইলেক্ট্রনিক মেইল</li>
+                    <li><input type="radio" name="question5" value="ইমাজিনারি মেইল"> ইমাজিনারি মেইল</li>
+                </ul>
+            </div>
+
+            <!-- Question 6 -->
+            <div class="question">
+                <h3>৬. Chat অর্থ কী?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="question6" value="বই পড়া"> বই পড়া</li>
+                    <li><input type="radio" name="question6" value="কথকপোথন"> কথকপোথন</li>
+                    <li><input type="radio" name="question6" value="গাড়ী চালানো"> গাড়ী চালানো</li>
+                </ul>
+            </div>
+
+            <!-- Question 7 -->
+            <div class="question">
+                <h3>৭. আপনি কিভাবে শিখন যাচাই পছন্দ করেন?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="question7" value="পরীক্ষার মাধ্যমে"> পরীক্ষার মাধ্যমে</li>
+                    <li><input type="radio" name="question7" value="বাড়ির কাজের উপর"> বাড়ির কাজের উপর</li>
+                </ul>
+            </div>
+
+            <!-- Question 8 -->
+            <div class="question">
+                <h3>৮. আপনি কোন ধরনের কোর্স নিতে পছন্দ করেন?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="question8" value="রেকর্ড ক্লাস"> রেকর্ড ক্লাস</li>
+                    <li><input type="radio" name="question8" value="লাইভ সেশন"> লাইভ সেশন</li>
+                    <li><input type="radio" name="question8" value="হাতে কলমে"> হাতে কলমে</li>
+                </ul>
+            </div>
+
+            <!-- Question 9 -->
+            <div class="question">
+                <h3>১০. ফ্রিল্যান্সিং এর মাধ্যমে আপনি কেমন আয় করতে চান?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="question9" value="মূল আয়"> মূল আয়</li>
+                    <li><input type="radio" name="question9" value="চাকরীর পাশাপাশি আয়"> চাকরীর পাশাপাশি আয়</li>
+                    <li><input type="radio" name="question9" value="পড়াশোনার পাশাপাশি আয়"> পড়াশোনার পাশাপাশি আয়</li>
+                </ul>
+            </div>
+
+            <!-- Question 10 -->
+            <div class="question">
+                <h3>১১. কোন ধরনের অনলাইন কন্টেন্ট আপনার জন্য বেশি প্রাসঙ্গিক?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="question10" value="ভিডিও লেকচার"> ভিডিও লেকচার</li>
+                    <li><input type="radio" name="question10" value="লাইভ সেশনের সেশন"> লাইভ সেশনের সেশন</li>
+                    <li><input type="radio" name="question10" value="অফলাইন"> অফলাইন</li>
+                </ul>
+            </div>
+
+      
+
+            <!-- Question 13 -->
+            <div class="question">
+                <h3>১৩. আপনার শিখতে ইচ্ছুক বিষয়ে কোন ধরনের কাজ প্রাধান্য দেন?</h3>
+                <ul class="options">
+                    <li><input type="radio" name="question13" value="অ্যাসাইনমেন্ট"> অ্যাসাইনমেন্ট</li>
+                    <li><input type="radio" name="question13" value="প্রোজেক্ট ভিত্তিক কাজ"> প্রোজেক্ট ভিত্তিক কাজ</li>
+                </ul>
+            </div>
+            <button type="submit" class="submit-button">সাবমিট</button>
+        </form>
+    </div>
+
+    <!-- Thank You Section -->
+    <div class="container thank-you-message" id="thank-you-container">
+        <h1>ধন্যবাদ!</h1>
+        <p>আপনার কুইজ সফলভাবে জমা হয়েছে। কুইজটিতে অংশগ্রহণের জন্য ধন্যবাদ। আমরা শিঘ্রই আপনার সাথে যোগাযোগ করবো</p>
+    </div>
+
+    <footer>
+        <p>© 2024 Learn &amp; Earn. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('quiz-form').addEventListener('submit', function(event) {
+            event.preventDefault();  // Prevent form submission
+            document.getElementById('quiz-container').style.display = 'none';  // Hide the quiz
+            document.getElementById('thank-you-container').style.display = 'block';  // Show the thank-you message
+        });
+    </script>
+
+</body>
+</html>
